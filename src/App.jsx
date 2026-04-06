@@ -16,7 +16,8 @@ const featuredProjects = [
     nextSteps: [
       "Improve upload guidance, loading states, and error handling so the flow feels more reliable for first-time users",
       "Add saved identification history so users can revisit previous plant results instead of treating each upload as a one-off session",
-      "Expand result details with clearer confidence indicators and more useful follow-up plant care information"
+      "Expand result details with clearer confidence indicators and more useful follow-up plant care information",
+      "Add Playwright-based end-to-end coverage once the core upload and results flow is stable"
     ],
     links: {
       github: "https://github.com/jshim66",
@@ -104,9 +105,9 @@ const experience = [
     bullets: [
       "Designed and built C# automation frameworks targeting complex, multi-hour test scenarios for ARTAS, a robotic hair restoration system, reducing overall test cycle time and enabling engineers to iterate faster across monthly release cycles.",
       "Developed SQL scripts to verify correct data transfer between local and server environments, cross-referencing treatment report outputs against source records to ensure data correctness and integrity at scale.",
-      "Integrated automation test suites into CI/CD pipelines via Azure DevOps, establishing consistent regression coverage and faster feedback loops that supported a high-cadence monthly release schedule.",
+      "Integrated automation test suites into formal test protocols through Azure DevOps, helping establish more consistent regression coverage and faster feedback loops across a high-cadence monthly release schedule.",
       "Collaborated with cross-functional R&D teams spanning hardware, enterprise, and software engineering to implement and validate cloud-based system registration and device connectivity across complex end-to-end workflows.",
-      "Owned end-to-end release validation across 5+ software releases in a regulated medical device environment, coordinating between engineering and clinical stakeholders to align on quality standards and release readiness.",
+      "Owned end-to-end release validation across 10+ software releases in a regulated medical device environment, coordinating between engineering and clinical stakeholders to align on quality standards and release readiness.",
       "Participated in live clinical procedure sessions as the on-site technical operator, observing real-world system behavior and translating findings into actionable bug reports and improvements that fed directly back into the development cycle."
     ]
   }
@@ -210,8 +211,9 @@ function App() {
               I have 3+ years of experience building automation frameworks,
               validating complex end-to-end workflows, and supporting release
               readiness in a regulated medical device environment. I am targeting
-              SDET, software quality, and software engineering roles where I can
-              contribute both engineering rigor and hands-on coding ability.
+              SDET and software engineering roles, and I am intentionally growing
+              toward broader software engineering work through hands-on full-stack
+              projects, game development, and continued problem-solving in Python.
             </p>
 
             <div className="button-row">
@@ -233,8 +235,8 @@ function App() {
                 <p>Quality engineering and automation experience</p>
               </div>
               <div>
-                <span>5+ releases</span>
-                <p>End-to-end release validation in a regulated environment</p>
+                <span>10+ releases</span>
+                <p>End-to-end validation and release readiness in a regulated environment</p>
               </div>
               <div>
                 <span>Cross-functional</span>
@@ -247,10 +249,10 @@ function App() {
             <p className="eyebrow">Snapshot</p>
             <div className="panel-stack">
               <div>
-                <h3>Target roles</h3>
+                <h3>Career direction</h3>
                 <p>
-                  SDET, software quality engineer, and transition-friendly
-                  software engineering roles.
+                  Transitioning from quality engineering into broader software
+                  engineering work while remaining a strong fit for SDET roles.
                 </p>
               </div>
               <div>
@@ -263,7 +265,7 @@ function App() {
               <div>
                 <h3>Technologies</h3>
                 <p>
-                  C#, SQL, Azure DevOps, Playwright, React, Node.js, and Godot.
+                  C#, Python, SQL, Azure DevOps, React, Node.js, and Godot.
                 </p>
               </div>
             </div>
