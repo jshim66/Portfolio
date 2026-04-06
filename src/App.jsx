@@ -13,6 +13,11 @@ const featuredProjects = [
     ],
     learned:
       "The most valuable part of the project was learning how much polish lives between the core feature and the actual user experience. Getting the technical flow working was only the first step. Making uploads reliable, handling API responses cleanly, and presenting results in a way that felt useful taught me a lot about end-to-end product implementation.",
+    nextSteps: [
+      "Improve upload guidance, loading states, and error handling so the flow feels more reliable for first-time users",
+      "Add saved identification history so users can revisit previous plant results instead of treating each upload as a one-off session",
+      "Expand result details with clearer confidence indicators and more useful follow-up plant care information"
+    ],
     links: {
       github: "https://github.com/jshim66",
       live: "#"
@@ -195,18 +200,18 @@ function App() {
         <div className="hero-grid">
           <div className="hero-copy">
             <p className="hero-chip">
-              Open to SDET, software quality, and transition-friendly software engineering roles
+              Open to SDET, software quality, and software engineering roles
             </p>
             <h1>
-              I build reliable software systems with a foundation in automation,
-              testing, and product quality.
+              Quality engineer with 3+ years in automation, systems validation,
+              and release readiness.
             </h1>
             <p className="hero-text">
-              I am a Software Quality Engineer with 3+ years of experience building
-              automation frameworks, validating complex workflows, and partnering
-              across engineering teams. I am targeting SDET, software quality, and
-              software engineering roles where strong coding, systems thinking, and
-              product reliability matter.
+              I have 3+ years of experience building automation frameworks,
+              validating complex end-to-end workflows, and supporting release
+              readiness in a regulated medical device environment. I am targeting
+              SDET, software quality, and software engineering roles where I can
+              contribute both engineering rigor and hands-on coding ability.
             </p>
 
             <div className="button-row">
@@ -228,38 +233,37 @@ function App() {
                 <p>Quality engineering and automation experience</p>
               </div>
               <div>
-                <span>Systems-first</span>
-                <p>Validation across connected workflows and data movement</p>
+                <span>5+ releases</span>
+                <p>End-to-end release validation in a regulated environment</p>
               </div>
               <div>
-                <span>Builder mindset</span>
-                <p>Full-stack and gameplay projects outside of day-to-day work</p>
+                <span>Cross-functional</span>
+                <p>Collaboration across software, hardware, enterprise, and clinical teams</p>
               </div>
             </div>
           </div>
 
           <aside className="hero-panel">
-            <p className="eyebrow">What I bring</p>
+            <p className="eyebrow">Snapshot</p>
             <div className="panel-stack">
               <div>
-                <h3>Automation and validation</h3>
+                <h3>Target roles</h3>
                 <p>
-                  Built automation frameworks and regression coverage for complex
-                  system workflows that benefit from dependable feedback.
+                  SDET, software quality engineer, and transition-friendly
+                  software engineering roles.
                 </p>
               </div>
               <div>
-                <h3>Cross-functional product work</h3>
+                <h3>Core strengths</h3>
                 <p>
-                  Partnered with software, enterprise, hardware, and clinical
-                  stakeholders in real production settings.
+                  Automation frameworks, systems validation, regression coverage,
+                  and release readiness across connected workflows.
                 </p>
               </div>
               <div>
-                <h3>Growing software breadth</h3>
+                <h3>Technologies</h3>
                 <p>
-                  Building full-stack and game projects to expand from quality
-                  engineering into broader software roles.
+                  C#, SQL, Azure DevOps, Playwright, React, Node.js, and Godot.
                 </p>
               </div>
             </div>
@@ -329,6 +333,20 @@ function App() {
                     <p className="project-section-label">What I learned</p>
                     <p className="project-description">{project.learned}</p>
                   </div>
+
+                  {project.nextSteps ? (
+                    <div className="project-section">
+                      <p className="project-section-label">Next steps</p>
+                      <div className="highlight-list compact">
+                        {project.nextSteps.map((step) => (
+                          <div className="highlight-row" key={step}>
+                            <span />
+                            <p>{step}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
 
                 <div className="button-row">
