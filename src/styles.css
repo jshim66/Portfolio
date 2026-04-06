@@ -391,6 +391,13 @@ h3 {
   font-weight: 600;
 }
 
+.timeline-note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 .project-card h3,
 .timeline-card h3 {
   margin-top: 10px;

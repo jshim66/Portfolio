@@ -17,23 +17,6 @@ const featuredProjects = [
     }
   },
   {
-    title: "Automation Frameworks for Complex System Validation",
-    subtitle: "SQA / SDET case study",
-    stack: ["C#", "SQL", "Azure DevOps", "CI/CD", "Test Automation"],
-    description:
-      "Designed and maintained automation coverage for complex multi-hour test scenarios in a regulated environment. The work improved regression efficiency, supported release confidence, and validated critical data flows across connected systems.",
-    highlights: [
-      "Built C# automation for long-running system workflows",
-      "Created SQL-based validation to verify data correctness across environments",
-      "Supported release readiness across multiple production and clinical releases",
-      "Integrated automated coverage into Azure DevOps-driven workflows"
-    ],
-    links: {
-      github: "#",
-      live: "#"
-    }
-  },
-  {
     title: "Spaghetti Looperz",
     subtitle: "Western-themed game jam project built under a four-day deadline",
     stack: ["Godot", "C#", "Git", "Game Systems", "Team Collaboration"],
@@ -107,13 +90,15 @@ const experience = [
   {
     company: "Venus AI",
     role: "Software Quality Engineer",
-    period: "Most Recent Role",
+    period: "Feb 2023 - Mar 2026",
+    note: "Promoted from Jr. Software Quality Engineer in Feb 2024",
     bullets: [
-      "Designed and built C# automation frameworks for complex, multi-hour test scenarios, reducing test cycle time and improving engineering feedback loops.",
-      "Developed SQL validation workflows to verify data transfer correctness between local and server environments and ensure report accuracy at scale.",
-      "Integrated automation coverage into CI/CD-style workflows through Azure DevOps to support reliable regression execution and faster release feedback.",
-      "Collaborated across software, enterprise, hardware, and clinical stakeholders to validate end-to-end workflows in a regulated environment.",
-      "Owned release validation across multiple software releases, helping align quality expectations and release readiness across teams."
+      "Designed and built C# automation frameworks targeting complex, multi-hour test scenarios for ARTAS, a robotic hair restoration system, reducing overall test cycle time and enabling engineers to iterate faster across monthly release cycles.",
+      "Developed SQL scripts to verify correct data transfer between local and server environments, cross-referencing treatment report outputs against source records to ensure data correctness and integrity at scale.",
+      "Integrated automation test suites into CI/CD pipelines via Azure DevOps, establishing consistent regression coverage and faster feedback loops that supported a high-cadence monthly release schedule.",
+      "Collaborated with cross-functional R&D teams spanning hardware, enterprise, and software engineering to implement and validate cloud-based system registration and device connectivity across complex end-to-end workflows.",
+      "Owned end-to-end release validation across 5+ software releases in a regulated medical device environment, coordinating between engineering and clinical stakeholders to align on quality standards and release readiness.",
+      "Participated in live clinical procedure sessions as the on-site technical operator, observing real-world system behavior and translating findings into actionable bug reports and improvements that fed directly back into the development cycle."
     ]
   }
 ];
@@ -300,7 +285,7 @@ function App() {
           <SectionHeading
             eyebrow="Featured projects"
             title="Projects that reflect both engineering and product thinking"
-            description="These projects highlight work across full-stack development, automation, and systems-oriented problem solving."
+            description="These projects highlight hands-on software development, fast iteration, and product-minded implementation."
           />
 
           <div className="project-list">
@@ -342,9 +327,9 @@ function App() {
 
         <section className="section" id="experience">
           <SectionHeading
-            eyebrow="Experience"
-            title="Professional background"
-            description="My experience is centered on quality engineering, automation, and cross-team product validation in complex environments."
+            eyebrow="Work experience"
+            title="Professional experience in quality engineering and systems validation"
+            description="Hands-on experience building automation, validating regulated workflows, and supporting cross-functional release readiness in a medical device environment."
           />
 
           <div className="timeline">
@@ -354,6 +339,7 @@ function App() {
                   <div>
                     <p className="timeline-company">{job.company}</p>
                     <h3>{job.role}</h3>
+                    <p className="timeline-note">{job.note}</p>
                   </div>
                   <p className="timeline-period">{job.period}</p>
                 </div>
