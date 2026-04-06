@@ -3,14 +3,16 @@ const featuredProjects = [
     title: "Plantify",
     subtitle: "Full-stack plant identification app",
     stack: ["React", "TypeScript", "Express", "Node.js", "Plant.ID API"],
-    description:
-      "Built a full-stack app that lets users upload plant images and identify them through a third-party API. The product work focused on a smooth upload flow, reliable backend request handling, and clear result presentation.",
-    highlights: [
-      "Implemented the image upload flow from frontend through backend integration",
+    whyBuilt:
+      "I built Plantify because I wanted a project that felt more interactive than a standard CRUD app while giving me real experience with file uploads and third-party API integration. Plant identification felt practical, visual, and useful right away, which made it a strong project for building both technical depth and product thinking.",
+    owned: [
+      "Built the full upload-to-results flow across the React frontend and Express backend",
       "Handled base64 image processing and third-party API requests on the server",
-      "Resolved CORS, file upload, and TypeScript environment issues during development",
-      "Designed a modal-based experience for plant details and identification results"
+      "Worked through CORS, file upload, and TypeScript environment issues during development",
+      "Designed the result experience so plant details felt clear and easy to understand"
     ],
+    learned:
+      "The most valuable part of the project was learning how much polish lives between the core feature and the actual user experience. Getting the technical flow working was only the first step. Making uploads reliable, handling API responses cleanly, and presenting results in a way that felt useful taught me a lot about end-to-end product implementation.",
     links: {
       github: "https://github.com/jshim66",
       live: "#"
@@ -20,14 +22,16 @@ const featuredProjects = [
     title: "Spaghetti Looperz",
     subtitle: "Western-themed game jam project built under a four-day deadline",
     stack: ["Godot", "C#", "Git", "Game Systems", "Team Collaboration"],
-    description:
-      "Built as part of a game jam submission, Spaghetti Looperz highlights fast collaborative development, modular gameplay systems, and clean implementation under tight time constraints.",
-    highlights: [
+    whyBuilt:
+      "I built Spaghetti Looperz as part of a game jam because I wanted experience shipping something creative with a team under real time pressure. It was a chance to practice fast decision-making, collaborative development, and delivering a playable experience instead of endlessly refining ideas.",
+    owned: [
       "Designed and implemented modular gameplay systems during a four-day development cycle",
       "Built gameplay around quick combat interactions, progression, and arcade-style pacing",
-      "Collaborated with a team using Git while managing rapid iteration and shared changes",
-      "Contributed to a project that placed in the top 1,000 out of 9,700+ submissions"
+      "Collaborated with a team using Git while managing rapid iteration and shared code changes",
+      "Helped ship a project that placed in the top 1,000 out of 9,700+ submissions"
     ],
+    learned:
+      "This project reinforced how important scope, communication, and clean implementation are when time is limited. It taught me how to balance ambition with execution and how to make practical engineering choices that keep a team moving.",
     links: {
       github: "https://github.com/jshim66",
       live: "https://azhangtaco.itch.io/spaghetti-loopers"
@@ -303,15 +307,28 @@ function App() {
                   </div>
                 </div>
 
-                <p className="project-description">{project.description}</p>
+                <div className="project-sections">
+                  <div className="project-section">
+                    <p className="project-section-label">Why I built it</p>
+                    <p className="project-description">{project.whyBuilt}</p>
+                  </div>
 
-                <div className="highlight-list">
-                  {project.highlights.map((highlight) => (
-                    <div className="highlight-row" key={highlight}>
-                      <span />
-                      <p>{highlight}</p>
+                  <div className="project-section">
+                    <p className="project-section-label">What I owned</p>
+                    <div className="highlight-list compact">
+                      {project.owned.map((highlight) => (
+                        <div className="highlight-row" key={highlight}>
+                          <span />
+                          <p>{highlight}</p>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  </div>
+
+                  <div className="project-section">
+                    <p className="project-section-label">What I learned</p>
+                    <p className="project-description">{project.learned}</p>
+                  </div>
                 </div>
 
                 <div className="button-row">
