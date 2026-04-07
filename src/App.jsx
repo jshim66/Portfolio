@@ -21,7 +21,7 @@ const featuredProjects = [
     ],
     links: {
       github: "https://github.com/jshim66",
-      live: "#"
+      live: "https://plantify-1-9qi2.onrender.com/"
     }
   },
   {
